@@ -4,6 +4,6 @@ WORKDIR /opt/project
 
 ADD . ./
 
-RUN yarn install && \
-    yarn serve && \
-    yarn build
+RUN yarn install
+
+ENTRYPOINT ["npm","run","runHeadless"]

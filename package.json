@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "runHeadless": "cypress run --headless"
   },
   "dependencies": {
     "core-js": "^3.6.5",

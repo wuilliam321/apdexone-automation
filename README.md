@@ -28,3 +28,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.4.0
 ```
+
+### Build the docker image
+```
+docker build --rm -t registry_name/some_name:tag -f Dockerfile .
+```
+
+We can run the tests (headless) using the previous docker image:
+```
+docker run --rm -ti registry_name/some_name:tag
+```
